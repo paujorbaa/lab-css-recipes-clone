@@ -5,11 +5,22 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -17,8 +28,68 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 /*  Set the font */
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* STYLES */
 /* Write your CSS below */
+
+#apple-pie {
+  background-image: url("../images/apple-pie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+}
+
+#apple-pie-title {
+  color: white;
+  text-align: center;
+  line-height: 650px;
+  font-size: 80px;
+}
+
+#recipe-text {
+  margin: 125px;
+  font-size: 32px;
+}
+
+#recipe-info {
+  display: block;
+  margin: 0 auto;
+}
+
+.division-line {
+  width: auto;
+  height: 2px;
+  background-color: gray;
+  margin-left: 125px;
+  margin-right: 125px;
+  margin-top: 50px;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  margin-left: 125px;
+}
+ul {
+  margin: 0;
+}
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: -5px;
+}
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -5px;
+}
+
+#cooking-info {
+  display: block;
+  margin: 0 auto;
+}
