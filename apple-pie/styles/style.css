@@ -46,50 +46,62 @@ body {
   color: white;
   text-align: center;
   line-height: 650px;
-  font-size: 80px;
+  font-size: 55px;
+}
+
+#main-container {
+  margin: 100px 115px;
 }
 
 #recipe-text {
-  margin: 125px;
-  font-size: 32px;
+  font-size: 24px;
+  margin-bottom: 40px;
 }
 
 #recipe-info {
   display: block;
   margin: 0 auto;
+  width: 50%;
 }
 
 .division-line {
   width: auto;
   height: 2px;
   background-color: gray;
-  margin-left: 125px;
-  margin-right: 125px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 h2 {
   font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: normal;
-  margin-bottom: 15px;
-  margin-left: 125px;
+  margin: 50px 0 25px 0;
 }
+
 ul {
-  margin: 0;
-}
-ul.dashed {
-  list-style-type: none;
-}
-ul.dashed > li {
-  text-indent: -5px;
-}
-ul.dashed > li:before {
-  content: "-";
-  text-indent: -5px;
+  list-style-type: "-";
+  margin-left: 20px;
 }
 
 #cooking-info {
   display: block;
   margin: 0 auto;
+  padding: 25px 0 5px 0;
+  width: 50%;
+}
+
+ol {
+  list-style: none;
+}
+
+ol > li {
+  counter-increment: listcounter;
+}
+
+ol > li::before {
+  content: counter(listcounter) ")";
+}
+
+ol {
+  margin-left: 15px;
 }
